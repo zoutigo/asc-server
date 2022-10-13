@@ -3,4 +3,6 @@ export class CreateUserDto {
   displayName: string;
   lastname: string;
   firstname: string;
+  motivation: string;
+  isValidated: boolean;
 }
