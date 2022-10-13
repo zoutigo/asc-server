@@ -11,6 +11,8 @@ services:
       - db
     env_file:
       - .env
+    environment:
+      -DOCKER_ENABLE: DOCKER
  
   db:
     image: mysql:5.7.22
@@ -23,5 +25,5 @@ services:
     volumes:
       - .dbdata:/var/lib/mysql
     ports:
-      - 60306:3306
+      - 127.0.0.1:60306:3306
 
